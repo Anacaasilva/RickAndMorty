@@ -5,7 +5,11 @@
   --secondy-color: rgba(15, 160, 21, 0.50);
   --tertiary-color: rgba(255, 255, 255, 0.60);
 
-  --source: 'Mukta;'
+  --source: 'Mukta';
+}
+
+body {
+  width: auto;
 }
 
 .viewpoint {
@@ -14,32 +18,57 @@
 
 .containerImg {
   display: flex;
-  justify-content: center;
   align-items: end;
+  margin-top: 35px;
+  justify-content: center;
 }
 
 .content {
   display: flex;
-  /* justify-content: space-between; */
+  padding: 0 70px;
+  justify-content: space-between;
+}
+
+.gif {
+  margin-top: 20px;
+}
+
+.containerTopics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .topics {
+  list-style: none;
+}
+
+.link {
+  font-size: 50px;
+  text-decoration: none;
+  font-weight: 500;
   font-family: var(--source);
   color: var(--primary-color);
-  font-size: 50px;
+}
 
+.link:hover {
+  font-size: 60px;
+  transition: .5s;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: var(--secondy-color);
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  position: fixed;
   bottom: 0;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
 }
 
 .textFooter {
+  font-size: 15px;
   font-family: var(--source);
   color: var(--tertiary-color);
-  font-size: 15px;
 }
