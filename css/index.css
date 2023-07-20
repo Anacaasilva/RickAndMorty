@@ -9,12 +9,13 @@
 }
 
 .viewpoint {
-  height: 100vh;
+  height: 85vh;
 }
 
 .containerImg {
   display: flex;
   justify-content: center;
+  align-items: end;
 }
 
 .content {
@@ -26,4 +27,19 @@
   font-family: var(--source);
   color: var(--primary-color);
   font-size: 50px;
+
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.textFooter {
+  font-family: var(--source);
+  color: var(--tertiary-color);
+  font-size: 15px;
 }
