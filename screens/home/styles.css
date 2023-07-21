@@ -13,7 +13,7 @@ body {
 }
 
 .viewpoint {
-  height: 85vh;
+  flex: 1;
 }
 
 .containerImg {
@@ -40,23 +40,34 @@ body {
 }
 
 .topics {
+  display: flex;
+  margin-top: 50px;
   list-style: none;
+  justify-content: end;
 }
 
 .link {
   font-size: 50px;
-  text-decoration: none;
   font-weight: 500;
+  text-decoration: none;
   font-family: var(--source);
   color: var(--primary-color);
 }
 
 .link:hover {
-  font-size: 60px;
+  padding: 10px;
   transition: .5s;
+  font-size: 60px;
   font-weight: 700;
   border-radius: 5px;
   background-color: var(--secondy-color);
+}
+
+.triangle {
+  position: absolute;
+  right: 10px;
+  margin-bottom: 140px;
+  transition: all .5s;
 }
 
 footer {
