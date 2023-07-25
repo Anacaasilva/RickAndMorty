@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+:root {
+  --source: 'Mukta';
+
+  --main-color: #0FA015;
+  --primary-color: #FFFFFF;
+}
+
+body{
+  background-color: #020503;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  height: 110px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+#search {
+  background-color: var(--primary-color);
+}

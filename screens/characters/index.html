@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br"> 
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="shortcut icon" href="../../assets/logo.svg">
+  <link rel="stylesheet" href="../../styles/nav.css">
+  <title>Personagens | Rick and Morty</title>
 </head>
+
 <body>
   <header>
+    <nav>
+      <div>
+        <img src="../../assets/logo.svg" alt="Rick and Morty Icon">
+      </div>
+      <input type="text" name="search" id="search">
+        <div containerNav>
+          <h2 class="">
+            <a href="../characters/index.html">Personagens</a>
+          </h2>
+          <h2 class="">
+            <a href="../locations/index.html">Localizações</a>
+          </h2>
+          <h2 class="">
+            <a href="../episode/index.html">Episódios</a>
+          </h2>
+        </div>
+    </nav>
   </header>
   <main>
     <div id="list">
-      
     </div>
-
   </main>
 </body>
+
 </html>
 <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
 <script type="text/javascript" src="../../api/index.js"></script>
-<script  type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="./index.js"></script>
