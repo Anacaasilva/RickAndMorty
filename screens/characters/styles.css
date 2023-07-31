@@ -7,20 +7,72 @@
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(2px);
-  background-color: #000000a4;
+  background-color: #000000A4;
 }
 
 .backgroundModal {
-  width: 590px;
+  width: 490px;
+  display: flex;
+  height: 780px;
+  padding: 30px 60px;
   border-radius: 20px;
+  flex-direction: column;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 25px black;
+  background-color: #252525F3;
+}
+
+.containerCharacter {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 800px;
-  backdrop-filter: blur(2px);
-  box-shadow: 0 0 25px black;
-  /* background-color: #ffffffd0; */
-  background-color: #252525f3;
+}
+
+.imgModal {
+  margin: 70px 0;
+  border-radius: 20px;
+}
+
+.statusModal {
+  height: auto;
+}
+
+.statusModal {
+  display: flex;
+}
+
+.statusModal div {
+  width: 25px;
+  opacity: .5;
+  height: 25px;
+  margin-top: 1px;
+  margin-right: 5px;
+  border-radius: 100px;
+}
+
+.statusModal p {
+  font-size: 30px;
+  font-family: var(--source);
+}
+
+.containerInfo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.infoCharacter {
+  font-size: 25px;
+  line-height: 45px;
+  font-family: var(--source);
+  color: var(--primary-color);
+}
+
+strong {
+  font-weight: 700;
+  font-family: var(--source-desc);
 }
 
 #list {
@@ -30,7 +82,7 @@
 
 .card {
   width: 25%;
-  height: 500px;
+  height: 500px; 
   display: flex;
   margin-top: 60px;
   align-items: end;
