@@ -9,6 +9,10 @@ const requestCharacter = (id) => {
 
 }
 
+const hideModal = () => {
+  containerModal.innerHTML = ``
+}
+
 const showModal = (character) => {
 
   let color = '';
@@ -19,23 +23,25 @@ const showModal = (character) => {
 
   containerModal.innerHTML = `
     <div class="modal">
-      <div class="backgroundModal">
-        <div class="containerCharacter">
-          <h2 class="nameCharacter">${character.name}</h2>
-          <img class="imgModal" src="${character.image}" alt="Image character">
+      <button class="hideModal" onclick="hideModal()">
+      </button>
+        <div class="backgroundModal">
+          <div class="containerCharacter">
+            <h2 class="nameCharacter">${character.name}</h2>
+            <img class="imgModal" src="${character.image}" alt="Image character">
+          </div>
+          <div class="statusModal">
+            <div style="background-color:${color}"></div>
+            <p style="color:${color}">${character.status}</p>
+          </div>
+          <div class="containerInfo">
+            <p class="infoCharacter"><strong>Gender:</strong> ${character.gender}</p>
+            <p class="infoCharacter"><strong>Species:</strong> ${character.species}</p>
+            <p class="infoCharacter"><strong>Type:</strong> ${character.type}</p>
+            <p class="infoCharacter"><strong>Origin:</strong> ${character.origin.name}</p>
+            <p class="infoCharacter"><strong>Location:</strong> ${character.location.name}</p>
+          </div>
         </div>
-        <div class="statusModal">
-          <div style="background-color:${color}"></div>
-          <p style="color:${color}">${character.status}</p>
-        </div>
-        <div class="containerInfo">
-          <p class="infoCharacter"><strong>Gender:</strong> ${character.gender}</p>
-          <p class="infoCharacter"><strong>Species:</strong> ${character.species}</p>
-          <p class="infoCharacter"><strong>Type:</strong> ${character.type}</p>
-          <p class="infoCharacter"><strong>Origin:</strong> ${character.origin.name}</p>
-          <p class="infoCharacter"><strong>Location:</strong> ${character.location.name}</p>
-        </div>
-      </div>
     </div>
   `
 }

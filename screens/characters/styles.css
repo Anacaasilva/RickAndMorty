@@ -20,6 +20,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #000000A4;
 }
 
+.hideModal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+}
+
 .backgroundModal {
   width: 490px;
   display: flex;
