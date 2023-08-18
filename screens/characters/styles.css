@@ -120,6 +120,11 @@ strong {
   width: 80%;
   margin-top: -70px;
   border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.imgCharacter:hover {
+  width: 83%;
 }
 
 .nameCharacter {
@@ -154,6 +159,7 @@ strong {
   font-family: var(--source);
 }
 
+
 .containerButton {
   flex: 1;
   display: flex;
@@ -168,6 +174,11 @@ strong {
   font-weight: 400;
   padding: 5px 10px;
   border-radius: 10px;
+  transition: all 0.3s ease;
   font-family: var(--source);
   background-color: #49C141;
+}
+
+.button:hover {
+  background-color: #b7e0b5;
 }

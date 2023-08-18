@@ -1,0 +1,27 @@
+#pages {
+  display: flex;
+  margin: 8% 0 4% 0;
+  justify-content: space-around;
+}
+
+.results {
+  margin-right: 20%;
+  font-family: var(--source);
+  color: var(--primary-color);
+}
+
+.buttonPage {
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 2px;
+  margin-right: 10px;
+  font-family: var(--source);
+  color: var(--primary-color);
+  background-color: #49C141;
+}
+
+.buttonPage:disabled {
+  background-color: #0fa01540;
+}
