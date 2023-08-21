@@ -76,9 +76,9 @@ const showItens = ({ results }) => {
 }
 
 const showErr = () => {
-  list.innerHTML = `<h1>Erro</h1>`
+  list.innerHTML = `
+  <div class="containerError">
+    <h1 class="error">Personagem não encontrado...</h1>
+  </div>
+  `
 }
-
-api('https://rickandmortyapi.com/api/character?page=1')
-  .then(data => showItens(data))
-  .catch(_err => showErr())

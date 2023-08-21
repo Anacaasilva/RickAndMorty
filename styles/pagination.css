@@ -1,6 +1,7 @@
 #pages {
   display: flex;
   margin: 8% 0 4% 0;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -22,6 +23,6 @@
   background-color: #49C141;
 }
 
-.buttonPage:disabled {
+.buttonPage.disabled {
   background-color: #0fa01540;
 }
