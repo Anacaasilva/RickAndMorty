@@ -44,7 +44,7 @@ a {
   margin-right: 25px;
 }
 
-.topics:nth-child(1) {
+.topics.navCharacters, .navLocations, .navEpisode {
   border-radius: 5px;
   background-color: var(--topics-color);
 }
